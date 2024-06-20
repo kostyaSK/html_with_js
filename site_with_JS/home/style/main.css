@@ -1,0 +1,211 @@
+.main {
+    padding-top: 99px;
+    padding-left: 97px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    overflow-x: hidden;
+}
+
+.main-text {
+    padding-top: 12px;
+}
+
+.main-text-line {
+    margin-left: 3px;
+}
+
+.main-text-title {
+    margin: 10px 0 0 1px;
+    font-size: 75px;
+    font-family: var(--fontPoppins-m);
+    line-height: 90px;
+}
+
+.main-text-subtitle {
+    margin: 16px 0 0 3px;
+    font-size: 18px;
+    font-family: var(--fontInter-l);
+    line-height: 28px;
+    color: var(--color-grey-little-dark);
+}
+
+.main-text-subtitle > span {
+    font-family: var(--fontInter-m);
+    color: var(--color-black);
+}
+
+.main-text-buttons {
+    margin-top: 45px;
+}
+
+.main-button-black {
+    margin-right: 23px;
+    width: 179px;
+}
+
+.main-button-white {
+    width: 138px;
+}
+
+.main-button-black,
+.main-button-white {
+    height: 60px;
+    font-family: var(--fontPoppins-r);
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.main-text-awards {
+    margin-top: 82px;
+    display: flex;
+}
+
+.main-text-award {
+    margin-right: 65px;
+}
+
+.main-text-award:last-child {
+    margin-right: 0;
+}
+
+.main-text-award > h1 {
+    margin: 0;
+    font-size: 37px;
+    font-family: var(--fontPubSans-m);
+    line-height: 46px;
+    color: var(--color-black);
+}
+
+.main-text-award > p {
+    margin: 6px 0 0;
+    font-size: 12px;
+    font-family: var(--fontInter-r);
+    line-height: 18px;
+    color: var(--color-grey);
+}
+
+.main-cards {
+    position: relative;
+    transform: translateX(7%);
+    width: 780px;
+    height: 696px;
+    background: url("../images/svg/points_bg.svg") top right no-repeat,
+                url("../images/svg/circle_arrow.svg") top 62px right 208px no-repeat,
+                url("../images/img1_shadow.png") top 43px left -15px / 461px 465px no-repeat,
+                url("../images/img2_shadow.png") top 225px right 20px / 360px 363px no-repeat;
+}
+
+.move-left-bg {
+    background: url("../images/svg/points_bg.svg") top right no-repeat,
+                url("../images/svg/circle_arrow.svg") top 62px right 208px no-repeat,
+                url("../images/img1_shadow.png") top 225px right 20px / 360px 363px no-repeat,
+                url("../images/img2_shadow.png") top 43px left -15px / 461px 465px no-repeat;
+}
+
+.move-right-bg {
+    background: url("../images/svg/points_bg.svg") top right no-repeat,
+                url("../images/svg/circle_arrow.svg") top 62px right 208px no-repeat,
+                url("../images/img1_shadow.png") top 43px left -15px / 461px 465px no-repeat,
+                url("../images/img2_shadow.png") top 225px right 20px / 360px 363px no-repeat
+}
+
+.card-img-left {
+    width: 391px;
+    height: 395px;
+    position: absolute;
+    top: 19px;
+    z-index: 2;
+    transition: transform 2s ease-in-out, left 2s ease-in-out, right 4s ease-in-out, z-index 2s;
+}
+
+.card-img-right {
+    width: 319px;
+    height: 322px;
+    position: absolute;
+    top: 200px;
+    right: 30px;
+    z-index: 1;
+    transition: transform 2s ease-in-out, left 2s ease-in-out, right 2s ease-in-out, z-index 2s;
+}
+
+.move-left {
+    animation: moveLeft 2s forwards;
+    z-index: 2;
+}
+
+.move-right {
+    animation: moveRight 2s forwards;
+    z-index: 1;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0) translateY(0) scale(1);
+    }
+    100% {
+        transform: translateX(99.5%) translateY(35%) scale(0.8);
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0) translateY(0) scale(1);
+    }
+    100% {
+        transform: translateX(-123%) translateY(-42%) scale(1.25);
+    }
+}
+
+.move-right-second {
+    animation: moveRightSecond 2s forwards;
+    z-index: 1;
+}
+
+@keyframes moveRightSecond {
+    0% {
+        transform: translateX(-10%) translateY(0) scale(1);
+    }
+    100% {
+        transform: translateX(-132.5%) translateY(-42%) scale(1.25);
+    }
+}
+
+.move-left-reverse {
+    animation: moveLeftReverse 2s forwards;
+    z-index: 2;
+}
+
+.move-right-reverse {
+    animation: moveRightReverse 2s forwards;
+    z-index: 1;
+}
+
+@keyframes moveLeftReverse {
+    0% {
+        transform: translateX(0) translateY(35%) scale(0.8);
+    }
+    100% {
+        transform: translateX(-99.5%) translateY(0) scale(1);
+    }
+}
+
+@keyframes moveRightReverse {
+    0% {
+        transform: translateX(11.5%) translateY(-42%) scale(1.25);
+    }
+    100% {
+        transform: translateX(135%) translateY(0) scale(1);
+    }
+}
+
+.main-cards-buttons {
+    width: 181px;
+    height: 69px;
+    position: absolute;
+    bottom: 143px;
+    left: 100px;
+    background: url("../images/arrows-bg.png") top right no-repeat;
+    box-shadow: 0 43px 34px -26px rgba(15, 15, 15, 0.12);
+}
+
