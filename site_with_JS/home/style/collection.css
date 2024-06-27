@@ -1,0 +1,11 @@
+.collection {
+    padding-top: 236px;
+    background-color: var(--color-white);
+    position: relative;
+}
+
+.collection-viewed {
+    position: absolute;
+    right: 99px;
+    top: -155px;
+}

@@ -88,7 +88,7 @@
     width: 22px;
     height: 22px;
     border: none;
-    background: url("../../images/svg/header_form.svg");
+    background: url("../../common/images/svg/header_form.svg");
     cursor: pointer;
 }
 
