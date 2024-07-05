@@ -4,23 +4,39 @@
     --color-white-slightly-dark: #F1F1F1;
     --color-white-dark: #EDEDED;
     --color-viewed: #EDF2F7;
+    --color-line-collection: #EBE9E9;
+    --color-best-sell-num: #FCFCFD;
+
     --color-grey-light: #C2C3CB;
     --color-grey-slightly-light: #C5C5C5;
+    --color-title-collection: #93989A;
     --color-grey: #848586;
     --color-grey-little-dark: #676767;
     --color-grey-dark: #606060;
+    --color-grey-notification: #949494;
+    --color-footer-link: #B9B9B9;
+    --color-footer-icon: #535353;
+
     --color-black-light: rgba(28, 29, 32, 0.35);
     --color-black: #141416;
+    --color-black-little-dark: #010101;
     --color-black-dark: #000000;
+    --color-title-uleash: #18181B;
+    --color-unleash-li: #12141D;
 
+    --color-button-explore: #ACADB9;
     --color-blue-light : #94A3B8;
     --color-blue: #64748B;
     --color-blue-dark: #1A202C;
+    --color-best-sell-button: #23262F;
+    --color-question-card-title: #323142;
 
     --color-green: #10C352;
     --color-red: #E23333;
 
     --arrows-shadow: 0 43px 34px -26px rgba(15, 15, 15, 0.12);
+    --medCard-shadow: 39px 12px 59px 0 rgba(199, 199, 199, 0.6);
+    --not-shadow: 0 0 0 0 rgb(255, 255, 255);
 
     --fontInter-b: InterB, sans-serif;
     --fontInter-m: InterM, sans-serif;
@@ -37,13 +53,37 @@
     --fontPubSans-r: PublicSansR, sans-serif;
     --fontPubSans-l: PublicSansL, sans-serif;
 
+    --fontManrope-b: ManropeB, sans-serif;
+    --fontManrope-m: ManropeM, sans-serif;
+    --fontManrope-r: ManropeR, sans-serif;
+    --fontManrope-l: ManropeL, sans-serif;
+
+    --fontDMSans-b: DMSansB, sans-serif;
+    --fontDMSans-m: DMSanseM, sans-serif;
+    --fontDMSans-r: DMSansR, sans-serif;
+    --fontDMSans-l: DMSansL, sans-serif;
+
+    --fontOutfit-b: OutfitB, sans-serif;
+    --fontOutfit-m: OutfitM, sans-serif;
+    --fontOutfit-r: OutfitR, sans-serif;
+    --fontOutfit-l: OutfitL, sans-serif;
+
+
     --animation-speed: .3s;
     --animation-func: ease;
     --animation: var(--animation-speed) var(--animation-func);
+
+    --button-scale: 1.08;
+    --button-untiscale: 0.98;
 }
 
 body {
     margin: 0;
+    overflow-x: hidden;
+}
+
+body img {
+    -webkit-user-drag: none;
 }
 
 body * {

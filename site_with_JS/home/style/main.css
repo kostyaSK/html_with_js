@@ -3,7 +3,6 @@
     display: flex;
     justify-content: space-between;
     background-color: var(--color-white);
-    overflow-x: hidden;
 }
 
 .main-text {
@@ -89,21 +88,21 @@
     transform: translateX(7%);
     width: 780px;
     height: 590px;
-    background: url("../images/svg/points_bg.svg") top right no-repeat,
+    background: url("../images/svg/main_points_bg.svg") top right no-repeat,
                 url("../images/svg/circle_arrow.svg") top 62px right 208px no-repeat,
                 url("../images/img1_shadow.png") top 43px left -15px / 461px 465px no-repeat,
                 url("../images/img2_shadow.png") top 225px right 20px / 360px 363px no-repeat;
 }
 
 .move-left-bg {
-    background: url("../images/svg/points_bg.svg") top right no-repeat,
+    background: url("../images/svg/main_points_bg.svg") top right no-repeat,
                 url("../images/svg/circle_arrow.svg") top 62px right 208px no-repeat,
                 url("../images/img1_shadow.png") top 225px right 20px / 360px 363px no-repeat,
                 url("../images/img2_shadow.png") top 43px left -15px / 461px 465px no-repeat;
 }
 
 .move-right-bg {
-    background: url("../images/svg/points_bg.svg") top right no-repeat,
+    background: url("../images/svg/main_points_bg.svg") top right no-repeat,
                 url("../images/svg/circle_arrow.svg") top 62px right 208px no-repeat,
                 url("../images/img1_shadow.png") top 43px left -15px / 461px 465px no-repeat,
                 url("../images/img2_shadow.png") top 225px right 20px / 360px 363px no-repeat

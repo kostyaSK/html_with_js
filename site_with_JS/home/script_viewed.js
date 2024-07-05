@@ -7,20 +7,20 @@ function createCard(cardData, index) {
     card.innerHTML = `
         <div class="viewed-card">
             <div class="viewed-card-main">
-            <img class="viewed-card-img" src="${cardData.imgSrc}">
-            <div class="viewed-card-circle">${index + 1}</div>
-            <div class="viewed-card-name">
-                <h1>${cardData.fullName}</h1>
-                <p>${cardData.shortName}</p>
+                <img class="viewed-card-img" src="${cardData.imgSrc}">
+                <div class="viewed-card-circle">${index + 1}</div>
+                <div class="viewed-card-name">
+                    <h1>${cardData.fullName}</h1>
+                    <p>${cardData.shortName}</p>
+                </div>
             </div>
-        </div>
-        <div class="viewed-card-price">
-            <div class="viewed-card-price-main">
-                <img src="${cardData.iconSrc}">
-                <p>${cardData.price}</p>
+            <div class="viewed-card-price">
+                <div class="viewed-card-price-main">
+                    <img src="${cardData.iconSrc}">
+                    <p>${cardData.price}</p>
+                </div>
+                <p class="${percentClass}">${cardData.percent}</p>
             </div>
-            <p class="${percentClass}">${cardData.percent}</p>
-        </div>
         </div>
     `;
     return card;

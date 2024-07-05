@@ -12,22 +12,22 @@ document.addEventListener('DOMContentLoaded', function () {
     let lastScrollTime = 0;
     const scrollCooldown = 2000; // Минимальное время между вызовами прокрутки (в миллисекундах)
 
-    function createCard(cardData) {
+    function createMedCard(cardData) {
         const card = document.createElement('div');
-        card.className = 'topNFT-card';
+        card.className = 'topNFT-card medium-card';
         card.innerHTML = `
-            <img class="topNFT-card-img" src="${cardData.imgSrc}">
-            <div class="topNFT-time-bg">
-                <p class="topNFT-time">${cardData.time}</p>
+            <img class="medium-card-img" src="${cardData.imgSrc}">
+            <div class="medium-time-bg">
+                <p class="medium-time">${cardData.time}</p>
             </div>
-            <div class="topNFT-card-info">
-                <p class="topNFT-card-title">${cardData.title}</p>
-                <div class="topNFT-card-container">
+            <div class="medium-card-info">
+                <p class="medium-card-title">${cardData.title}</p>
+                <div class="medium-card-container">
                     <div>
-                        <p class="topNFT-card-subtitle">Current bid</p>
-                        <div class="topNFT-icon-container">
-                            <img class="topNFT-card-icon" src="${cardData.iconSrc}">
-                            <p class="topNFT-card-price">${cardData.currentBid}</p>
+                        <p class="medium-card-subtitle">Current bid</p>
+                        <div class="medium-icon-container">
+                            <img class="medium-card-icon" src="${cardData.iconSrc}">
+                            <p class="medium-card-price">${cardData.currentBid}</p>
                         </div>
                     </div>
                     <button class="button-card">PLACE BID</button>
@@ -37,10 +37,10 @@ document.addEventListener('DOMContentLoaded', function () {
         return card;
     }
 
-    function renderCards() {
+    function renderMedCards() {
         topNFTCards.innerHTML = '';
-        cardNormal.forEach(cardData => {
-            const card = createCard(cardData);
+        cardTopNFT.forEach(cardData => {
+            const card = createMedCard(cardData);
             topNFTCards.appendChild(card);
         });
         updateSliderPosition(0); // Обновляем начальную позицию слайдера
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateSliderPosition(direction) {
         const topNFTCard = document.querySelectorAll('.topNFT-card');
-        if (direction === 1 && currentIndex < cardNormal.length - (cardNormal.length - 1)) {
+        if (direction === 1 && currentIndex < cardTopNFT.length - (cardTopNFT.length - 1)) {
             currentIndex++;
         } else if (direction === -1 && currentIndex > -1) {
             currentIndex--;
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function showActiveArrow(left, right, currentIndex) {
-        if (currentIndex === cardNormal.length - (cardNormal.length - 1)) {
+        if (currentIndex === cardTopNFT.length - (cardTopNFT.length - 1)) {
             svgRight.setAttribute('fill', '#929292');
         } else {
             svgRight.setAttribute('fill', '#23262F');
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    if (cardNormal.length > 4) {
+    if (cardTopNFT.length > 4) {
         svgRight.setAttribute('fill', '#23262F');
         svgLeft.setAttribute('fill', '#23262F');
 
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Обработчик прокрутки колёсика мыши
         topNFTCards.addEventListener('wheel', function (event) {
             event.preventDefault();
-            const delta = event.deltaX;
+            const delta = event.deltaX || event.deltaY;
 
             const now = Date.now();
             if (now - lastScrollTime < scrollCooldown) {
@@ -113,5 +113,5 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    renderCards();
+    renderMedCards();
 });

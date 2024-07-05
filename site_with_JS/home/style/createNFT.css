@@ -1,0 +1,65 @@
+.createNFT {
+    padding-left: 97px;
+    padding-right: 98px;
+    padding-bottom: 160px;
+}
+
+.createNFT-card {
+    padding: 0 31px 0 66px;
+    height: 311px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    background-color: var(--color-black);
+    position: relative;
+}
+
+.createNFT-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.createNFT-main-title {
+    margin: 0;
+    font-size: 45px;
+    font-family: var(--fontPoppins-m);
+    line-height: 58px;
+    color: var(--color-white-light);
+}
+
+.createNFT-main-subtitle {
+    margin: 12px 0 0;
+    font-size: 20px;
+    font-family: var(--fontPoppins-r);
+    line-height: 26px;
+    color: var(--color-grey);
+}
+
+.createNFT-buttons {
+    margin-top: 51px;
+}
+
+.createNFT-button-white {
+    margin-right: 31px;
+}
+
+.createNFT-img-container {
+    height: 264px;
+}
+
+.createNFT-img {
+    height: 249px;
+    position: absolute;
+    bottom: 31px;
+    right: 31px;
+    z-index: 2;
+}
+
+.createNFT-background {
+    width: 500px;
+    height: 374px;
+    position: absolute;
+    top: -20px;
+    right: -30px;
+}

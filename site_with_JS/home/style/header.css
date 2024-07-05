@@ -46,6 +46,10 @@
     color: var(--color-grey);
 }
 
+.header-main-link:active {
+    text-decoration: underline;
+}
+
 .header-main-forms {
     display: flex;
 }
