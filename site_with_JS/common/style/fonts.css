@@ -1,0 +1,59 @@
+@font-face {
+    font-family: InterB;
+    src: url("../../fonts/Inter/Inter-Bold.ttf");
+}
+
+@font-face {
+    font-family: InterM;
+    src: url("../../fonts/Inter/Inter-Medium.ttf");
+}
+
+@font-face {
+    font-family: InterR;
+    src: url("../../fonts/Inter/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: InterL;
+    src: url("../../fonts/Inter/Inter-Light.ttf");
+}
+
+@font-face {
+    font-family: PoppinsB;
+    src: url("../../fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: PoppinsM;
+    src: url("../../fonts/Poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: PoppinsR;
+    src: url("../../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: PoppinsL;
+    src: url("../../fonts/Poppins/Poppins-Light.ttf");
+}
+
+@font-face {
+    font-family: PublicSansB;
+    src: url("../../fonts/PublicSans/PublicSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: PublicSansM;
+    src: url("../../fonts/PublicSans/PublicSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: PublicSansR;
+    src: url("../../fonts/PublicSans/PublicSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: PublicSansL;
+    src: url("../../fonts/PublicSans/PublicSans-Light.ttf");
+}

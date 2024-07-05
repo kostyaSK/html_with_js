@@ -1,0 +1,123 @@
+.viewed {
+    padding: 26px 24px 21px;
+    width: 365px;
+    border-radius: 16px;
+    border: 1px solid;
+    border-color: var(--color-viewed);
+    background: var(--color-white-light);
+}
+
+.viewed-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.viewed-info-title {
+    font-size: 21px;
+    font-family: var(--fontPoppins-m);
+    line-height: 28px;
+    color: var(--color-blue-dark);
+}
+
+.viewed-info-button {
+    width: 24px;
+    height: 24px;
+    border-radius: 25%;
+    border: none transparent;
+    background: url("../images/viewed/viewed-dots.svg") center no-repeat;
+    cursor: pointer;
+}
+
+.viewed-info-button:active {
+    border: 2px solid var(--color-black-light);
+}
+
+.viewed-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.viewed-card-main {
+    display: flex;
+    position: relative;
+}
+
+.viewed-card-img {
+    width: 46px;
+    height: 46px;
+}
+
+.viewed-card-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 21px;
+    font-size: 12px;
+    font-family: var(--fontPoppins-b);
+    color: var(--color-black);
+    border-radius: 100%;
+    background: var(--color-white-light);
+    position: absolute;
+    top: 27px;
+    left: 31px;
+}
+
+.viewed-card-name {
+    margin-left: 15px;
+}
+
+.viewed-card-name > h1 {
+    margin: 0;
+    font-size: 15px;
+    font-family: var(--fontPoppins-r);
+    line-height: 22px;
+    color: var(--color-black);
+}
+
+.viewed-card-name > p {
+    margin: 8px 0 0;
+    font-size: 12px;
+    font-family: var(--fontPoppins-l);
+    line-height: 19px;
+    color: var(--color-blue);
+}
+
+.viewed-card-price {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.viewed-card-price-main {
+    display: flex;
+}
+
+.viewed-card-price-main > img {
+    margin-right: 2px;
+}
+
+.viewed-card-price-main > p {
+    margin: 0;
+    font-size: 15px;
+    font-family: var(--fontPoppins-m);
+    line-height: 22px;
+    color: var(--color-black);
+}
+
+.viewed-card-price > p {
+    margin: 0;
+    font-size: 13px;
+    font-family: var(--fontInter-l);
+    line-height: 20px;
+}
+
+.percent-positive {
+    color: var(--color-green);
+}
+.percent-negative {
+    color: var(--color-red);
+}

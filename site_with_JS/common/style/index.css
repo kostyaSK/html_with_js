@@ -1,0 +1,51 @@
+:root {
+    --color-white-light: #FFFFFF;
+    --color-white: #F9F9F9;
+    --color-white-slightly-dark: #F1F1F1;
+    --color-white-dark: #EDEDED;
+    --color-viewed: #EDF2F7;
+    --color-grey-light: #C2C3CB;
+    --color-grey-slightly-light: #C5C5C5;
+    --color-grey: #848586;
+    --color-grey-little-dark: #676767;
+    --color-grey-dark: #606060;
+    --color-black-light: rgba(28, 29, 32, 0.35);
+    --color-black: #141416;
+    --color-black-dark: #000000;
+
+    --color-blue-light : #94A3B8;
+    --color-blue: #64748B;
+    --color-blue-dark: #1A202C;
+
+    --color-green: #10C352;
+    --color-red: #E23333;
+
+    --arrows-shadow: 0 43px 34px -26px rgba(15, 15, 15, 0.12);
+
+    --fontInter-b: InterB, sans-serif;
+    --fontInter-m: InterM, sans-serif;
+    --fontInter-r: InterR, sans-serif;
+    --fontInter-l: InterL, sans-serif;
+
+    --fontPoppins-b: PoppinsB, sans-serif;
+    --fontPoppins-m: PoppinsM, sans-serif;
+    --fontPoppins-r: PoppinsR, sans-serif;
+    --fontPoppins-l: PoppinsL, sans-serif;
+
+    --fontPubSans-b: PublicSansB, sans-serif;
+    --fontPubSans-m: PublicSansM, sans-serif;
+    --fontPubSans-r: PublicSansR, sans-serif;
+    --fontPubSans-l: PublicSansL, sans-serif;
+
+    --animation-speed: .3s;
+    --animation-func: ease;
+    --animation: var(--animation-speed) var(--animation-func);
+}
+
+body {
+    margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
