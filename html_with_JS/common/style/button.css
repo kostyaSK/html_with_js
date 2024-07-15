@@ -1,0 +1,357 @@
+.button-connect {
+    background-color: var(--color-black);
+    cursor: pointer;
+}
+
+.button-black {
+    background-color: var(--color-black-dark);
+}
+
+.button-connect,
+.button-black {
+    border: none;
+    color: var(--color-white-light);
+    transition: transform var(--animation);
+}
+
+.button-connect:hover,
+.button-black:hover,
+.button-connect:focus,
+.button-black:focus {
+    transform: scale(var(--button-scale));
+}
+
+.button-connect:active,
+.button-black:active {
+    transform: scale(var(--button-untiscale));
+    background-color: var(--color-grey-dark);
+}
+
+.button-white {
+    border: 2px solid var(--color-black-dark);
+    background-color: var(--color-white);
+    color: var(--color-black-dark);
+    transition: transform var(--animation);
+
+}
+
+.button-black,
+.button-white {
+    border-radius: 12px;
+}
+
+.button-white:hover,
+.button-white:focus {
+    transform: scale(var(--button-scale));
+}
+
+.button-white:active {
+    transform: scale(var(--button-untiscale));
+    background-color: var(--color-grey-light);
+}
+
+.button-arrow-left,
+.button-arrow-right {
+    margin-top: 3px;
+    width: 64px;
+    height: 64px;
+    background-color: transparent;
+    border-radius: 45%;
+    border: none;
+    cursor: pointer;
+}
+
+.button-arrow-left {
+    margin-left: 27px;
+}
+
+.button-arrow-right {
+    margin-left: 10px;
+}
+
+.button-arrow-left:active,
+.button-arrow-right:active {
+    border: 2px solid var(--color-grey);
+}
+
+.button-card {
+    width: 121px;
+    height: 51px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--color-black);
+    font-size: 14px;
+    font-family: var(--fontPoppins-m);
+    line-height: 21px;
+    color: var(--color-white-light);
+    cursor: pointer;
+    transition: transform var(--animation);
+}
+
+.button-card:hover,
+.button-card:focus {
+    transform: scale(var(--button-scale));
+}
+
+.button-card:active {
+    transform: scale(var(--button-untiscale));
+    background-color: var(--color-grey-dark);
+}
+
+.button-explore {
+    width: 121px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: var(--fontPoppins-r);
+    line-height: 40px;
+    color: var(--color-button-explore);
+    background: transparent;
+    transition: transform var(--animation);
+    cursor: pointer;
+}
+
+.button-explore:hover {
+    transform: scale(var(--button-scale));
+}
+
+.button-explore:active {
+    transform: scale(var(--button-untiscale));
+    border: 2px solid var(--color-button-explore);
+}
+
+.button-explore-arrow {
+    position: relative;
+    width: 14px;
+    height: 14px;
+}
+
+.button-explore-svg-1 {
+    width: 7px;
+    height: 14px;
+    position: absolute;
+    z-index: 2;
+    left: 14px;
+}
+
+.button-explore-svg-2 {
+    width: 14px;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+}
+
+.button-market {
+    margin-right: 22px;
+    height: 56px;
+    padding-right: 16px;
+    padding-left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--color-black);
+    border-radius: 13px;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: var(--fontManrope-m);
+    line-height: 23px;
+    color: var(--color-blue-dark);
+    transition: transform var(--animation);
+}
+
+.button-market:last-child {
+    margin-right: 0;
+}
+
+.button-market > img {
+    margin-right: 11px;
+}
+
+.button-market:hover,
+.button-market:focus {
+    transform: scale(var(--button-scale));
+}
+
+.button-market:active {
+    box-shadow: 39px 12px 59px 0 rgba(199, 199, 199, 0.6);
+    transform: scale(0.95);
+}
+
+.button-explore-black {
+    width: 164px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--color-black-dark);
+    font-size: 15px;
+    font-family: var(--fontPoppins-r);
+    line-height: 18px;
+    color: var(--color-white-light);
+    cursor: pointer;
+    transition: transform var(--animation);
+}
+
+.button-explore-black > img {
+    margin-left: 11px;
+    width: 22px;
+    height: 22px;
+}
+
+.button-explore-black:focus,
+.button-explore-black:hover {
+    transform: scale(var(--button-scale));
+}
+
+.button-explore-black:active {
+    transform: scale(var(--button-untiscale));
+    background-color: var(--color-grey-dark);
+}
+
+.best-sell-grey-button,
+.best-sell-black-button {
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    font-size: 12px;
+    font-family: var(--fontDMSans-b);
+    line-height: 14px;
+    color: var(--color-best-sell-button);
+    cursor: pointer;
+    transition: transform var(--animation);
+}
+
+.best-sell-grey-button {
+    width: 66px;
+    height: 28px;
+    border: 2px solid #E6E8EC;
+    background: transparent;
+}
+
+.best-sell-black-button {
+    width: 79px;
+    border: none;
+    background-color: #E6E8EC;
+}
+
+.best-sell-grey-button:hover,
+.best-sell-black-button:hover,
+.best-sell-grey-button:focus,
+.best-sell-black-button:focus {
+    transform: scale(var(--button-scale));
+}
+
+.best-sell-grey-button:active,
+.best-sell-black-button:active {
+    transform: scale(var(--button-untiscale));
+}
+
+.button-join-black {
+    width: 203px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 12px;
+    background: var(--color-black-dark);
+    font-size: 15px;
+    font-family: var(--fontPoppins-r);
+    line-height: 18px;
+    color: var(--color-white-light);
+    transition: transform var(--animation);
+    cursor: pointer;
+}
+
+.button-join-black:focus,
+.button-join-black:hover {
+    transform: scale(var(--button-scale));
+}
+
+.button-join-black:active {
+    transform: scale(var(--button-untiscale));
+    background-color: var(--color-grey-dark);
+}
+
+.button-questions-black,
+.button-questions-grey {
+    width: 33px;
+    height: 33px;
+    border: none;
+    border-radius: 100%;
+    color: var(--color-white-light);
+    font-size: 23px;
+    font-family: var(--fontPoppins-l);
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform var(--animation);
+}
+
+.button-questions-black {
+    background-color: var(--color-black);
+}
+
+.button-questions-grey {
+    background-color: var(--color-grey-slightly-light);
+}
+
+.button-questions-black:hover,
+.button-questions-black:focus,
+.button-questions-grey:hover,
+.button-questions-grey:focus {
+    transform: scale(var(--button-scale));
+}
+
+.button-questions-black:active,
+.button-questions-grey:active {
+    transform: scale(var(--button-untiscale));
+}
+
+.button-createNFT-white,
+.button-createNFT-transparent {
+    width: 183px;
+    height: 68px;
+    border-radius: 12px;
+    font-size: 21px;
+    font-family: var(--fontOutfit-m);
+    line-height: 28px;
+    cursor: pointer;
+    transition: transform var(--animation);
+}
+
+.button-createNFT-white {
+    border: none;
+    background: var(--color-white-light);
+    color: var(--color-black);
+}
+
+.button-createNFT-transparent {
+    border: 2px solid var(--color-white-light);
+    background: transparent;
+    color: var(--color-white-light);
+}
+
+.button-createNFT-white:hover,
+.button-createNFT-white:focus,
+.button-createNFT-transparent:hover,
+.button-createNFT-transparent:focus {
+    transform: scale(var(--button-scale));
+}
+
+.button-createNFT-white:active {
+    transform: scale(var(--button-untiscale));
+    background-color: var(--color-grey-dark);
+}
+
+.button-createNFT-transparent:active {
+    transform: scale(var(--button-untiscale));
+    background-color: var(--color-grey-dark);
+}

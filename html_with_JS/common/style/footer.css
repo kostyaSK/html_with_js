@@ -1,0 +1,95 @@
+.footer {
+    padding: 92px 96px 81px;
+    background-color: var(--color-black);
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo-title {
+    margin: 0 0 0 10px;
+    font-size: 30px;
+    font-family: var(--fontPoppins-m);
+    line-height: 39px;
+    color: var(--color-white-light);
+}
+
+.footer-links > a {
+
+}
+
+.footer-link {
+    margin-right: 70px;
+    color: var(--color-footer-link);
+    font-size: 18px;
+    font-family: var(--fontInter-r);
+    line-height: 27px;
+    text-decoration: none;
+    transition: color var(--animation);
+}
+
+.footer-link:last-child {
+    margin-right: 0;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--color-grey);
+}
+
+.footer-link:active {
+    text-decoration: underline;
+}
+
+.footer-line {
+    margin: 25px 1px 0;
+    width: 100%;
+    border: 1px solid #818181;
+}
+
+.footer-lower {
+    margin-top: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-lower-text {
+    margin: 0 0 0 6px;
+    font-size: 17px;
+    font-family: var(--fontInter-m);
+    line-height: 25px;
+    color: #999999;
+}
+
+.footer-lower-icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer-lower-icons > svg {
+    margin-left: 54px;
+    fill: var(--color-footer-icon);
+    cursor: pointer;
+    transition: fill var(--animation) transform var(--animation);
+}
+
+.footer-lower-icons > svg:first-child {
+    margin-left: 0;
+}
+
+.footer-lower-icons > svg:hover,
+.footer-lower-icons > svg:focus {
+    fill: var(--color-white-light);
+}
+
+.footer-lower-icons > svg:active {
+    transform: scale(var(--button-scale));
+}
